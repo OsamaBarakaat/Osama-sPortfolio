@@ -1,0 +1,617 @@
+* {
+    box-sizing: border-box;
+    // font-family: 'Acme', sans-serif;
+    // font-family: 'Aboreto', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+@mixin backgroundColor1($backgroundColor: #003049) {
+    background-color: $backgroundColor;
+}
+
+@mixin backgroundColor2($backgroundColor: #fdf0d5) {
+    background-color: $backgroundColor;
+}
+
+@mixin writingColor1($color: #011627) {
+    color: $color;
+}
+
+@mixin writingColor2($color: #ffffe8) {
+    color: $color;
+}
+
+@mixin buttonColor($color :#ffffe8) {
+    color: $color
+}
+
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+@mixin primColor($color: #fdf0d5) {
+    color: $color;
+}
+
+@mixin seconColor($color: #fdfffc, $backgroundColor: #003049) {
+    color: $color;
+    background-color: $backgroundColor;
+}
+
+// start of the nav 
+
+.header {
+    z-index: 1;
+}
+
+.nav {
+    // background-image: linear-gradient(160deg, #0005a3 0%, #7b7b7b 100%);
+    @include seconColor()
+}
+
+.nav-link {
+    // color: #1d3557;
+    @include primColor();
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+        // color: aqua;
+        // color: rgb(49, 25, 208);
+        transform: scale(1.2);
+        color: #f1faee;
+    }
+}
+
+#hock {
+    font-size: 25px;
+}
+
+
+
+// end of the nav 
+// satrt of who-i-am 
+
+.who-i-am {
+    // background-color: beige;
+    // background-image: linear-gradient(160deg, #0005a3 0%, #7b7b7b 100%);
+    @include backgroundColor2();
+}
+
+.who-i-am-img {
+    margin-top: 10px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 60%;
+    height: 100%;
+    width: 100%;
+}
+
+#p1,
+#p4 {
+    @include writingColor1();
+    // text-align: center;
+}
+
+#p1,
+cite {
+    font-size: x-large;
+}
+
+#p2 {
+    font-size: 60px;
+    @include writingColor1();
+}
+
+#p3 {
+    font-size: 100px;
+}
+
+.who-i-am-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text-align: start;
+    // margin-bottom: 15%;
+}
+
+
+
+/////////////
+/// 
+/// developer animation
+.slide-right {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    // margin-left: 600px;
+    // max-width: 500px
+}
+
+.slide-right {
+    animation: 2s slide-right 2s forwards;
+    transform: translateX(100px);
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20%);
+    }
+
+    // 75% {
+    //     transform: translateX(-20%);
+    // }
+
+    100% {
+        transform: translateX(0%);
+
+    }
+}
+
+.btns {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    justify-content: space-around;
+
+    .btn {
+        background-color: #003049;
+        color: white;
+        margin-right: 20px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+    }
+}
+
+// End of who-i-am 
+
+// satrt of about-me
+.about-me {
+    // margin-top: 10px;
+    @include seconColor();
+
+}
+
+.about-me-content {
+    margin-top: 50px;
+}
+
+#aboutgif2 {
+    font-size: 12px;
+}
+
+.ii {
+    font-size: 30px;
+    transition: 1s all;
+
+    &:hover {
+        // @include backgroundColor2();
+        @include buttonColor();
+        // transform: scale(1.3)
+        cursor: pointer;
+    }
+}
+
+#Ex-button {
+    @include backgroundColor2();
+    @include writingColor1();
+    border-radius: 40px;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: 1s all;
+
+    &:hover {
+        // background-color: ;
+        @include backgroundColor2();
+        transform: scale(1.2);
+    }
+}
+
+.ex-button {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#nav-home {
+    margin-top: 10px
+}
+
+#nav-home-tab,
+#nav-profile-tab,
+#nav-contact-tab {
+    &:hover {
+        transform: scale(1)
+    }
+}
+
+////
+
+#panel {
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn-group {
+    margin-top: 50px;
+    // justify-content: space-evenly;
+    // justify-content: center;
+    // // margin-left: 200px;
+}
+
+.about-me-buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#btn4 {
+    // color: #e63946;
+    @include writingColor1();
+    border-radius: 50px;
+    transition: 1s all;
+
+    &:hover {
+        // color: #1d3557;
+        @include buttonColor();
+        transform: scale(1.2);
+    }
+
+    background-color: #f1faee;
+}
+
+.workTitle,
+.clientsTitle {
+    color: white;
+}
+
+.card {
+    height: 250px;
+}
+
+#nav-contact {
+    margin-top: 20px;
+}
+
+.progress {
+    margin: 15px;
+    height: 30px;
+}
+
+#clients-title,
+#projects-title {
+    @include writingColor2()
+}
+
+.iji {
+    @include backgroundColor1()
+}
+
+.clientsTitle {
+    font-size: 4vw;
+    position: relative;
+    text-transform: uppercase;
+    color: #003049;
+    -webkit-text-stroke-color: 0.3vw #f1faee;
+
+}
+
+.clientsTitle::before {
+    content: attr(data-text);
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke-color: 0vw #f1faee;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+
+    0% {
+        width: 0%;
+    }
+
+    10% {
+        width: 0%;
+    }
+
+    70% {
+        width: 18%;
+    }
+
+    90% {
+        width: 18%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+///////////////
+/// start of clients
+
+.clients {
+    text-align: center;
+    @include backgroundColor1();
+    @include writingColor1();
+
+}
+
+.qoute {
+    font-size: x-large;
+    // color: #e63946;
+    @include buttonColor();
+}
+
+#project-img {
+    width: 10px;
+    height: 500px;
+}
+
+#project-title-inside {
+    color: #1d3557;
+    background-color: #1d3557;
+    font-weight: bolder;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+.commentbtn {
+    @include backgroundColor1();
+    @include writingColor2();
+
+    &:hover {
+        @include backgroundColor2();
+    }
+}
+
+.projects {
+    // margin: 20px;
+    // margin-bottom: 50px;
+    // width: max-content;
+    // background-color: #f1faee;
+    @include backgroundColor1();
+    @include writingColor1();
+
+}
+
+#latest-work-img {
+    height: 300px;
+    transition: 1s all;
+
+    &:hover {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+}
+
+.card-title,
+.card-text,
+.card-footer {
+    text-align: center;
+}
+
+.card-2 {
+    box-shadow: 5px 1px 20px 5px #011627;
+}
+
+//
+// lets-work-together
+.lets-work-together {
+    // margin-top: 20px;
+    @include backgroundColor1();
+
+}
+
+
+.lets-work-together img {
+    margin-top: 30px;
+    width: 80px;
+    height: 80px
+}
+
+.lets-work-together p {
+    @include writingColor2();
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.lets-work-together-title {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+label {
+    @include writingColor2()
+}
+
+/////////////////
+/// footer ////
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+#footerTitle {
+    font-size: 40px;
+}
+
+.placeholder {
+    width: 20%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width:768px) {
+
+    .header {
+        width: 100%;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                a {
+                    font-size: 11px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+
+    .who-i-am {
+        .image {
+            margin-bottom: 40px;
+        }
+
+        .row {
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            .text {
+                width: 100%;
+            }
+
+            #p3,
+            #p2 {
+                width: 100%;
+                font-size: 40px;
+            }
+
+            .btns {
+                display: flex;
+                justify-content: space-between;
+
+                .btn {
+                    background-color: #003049;
+                    color: white;
+                    padding: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .clients {
+        .row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .cards {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .card {
+                    margin-bottom: 20px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .projects {
+
+        .project-container {
+            display: flex;
+            flex-direction: column;
+
+            .pro {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .lets-work-together {
+        .hna {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+
+            p {
+                font-size: 25px;
+            }
+
+            img {
+                margin-top: 10px;
+                margin-right: 5px;
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+
+    }
+
+    @keyframes animate {
+
+        0% {
+            width: 0%;
+        }
+
+        10% {
+            width: 0%;
+        }
+
+        70% {
+            width: 24%;
+        }
+
+        90% {
+            width: 24%;
+        }
+
+        100% {
+            width: 0%;
+        }
+    }
+}

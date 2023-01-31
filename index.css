@@ -1,0 +1,513 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+}
+
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+}
+
+.header {
+  z-index: 1;
+}
+
+.nav {
+  color: #fdfffc;
+  background-color: #003049;
+}
+
+.nav-link {
+  color: #fdf0d5;
+  transition: 0.5s ease-in-out;
+}
+.nav-link:hover {
+  transform: scale(1.2);
+  color: #f1faee;
+}
+
+#hock {
+  font-size: 25px;
+}
+
+.who-i-am {
+  background-color: #fdf0d5;
+}
+
+.who-i-am-img {
+  margin-top: 10px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 60%;
+  height: 100%;
+  width: 100%;
+}
+
+#p1,
+#p4 {
+  color: #011627;
+}
+
+#p1,
+cite {
+  font-size: x-large;
+}
+
+#p2 {
+  font-size: 60px;
+  color: #011627;
+}
+
+#p3 {
+  font-size: 100px;
+}
+
+.who-i-am-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-right {
+  -webkit-animation: 2s slide-right 2s forwards;
+          animation: 2s slide-right 2s forwards;
+  transform: translateX(100px);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
+.btns .btn {
+  background-color: #003049;
+  color: white;
+  margin-right: 20px;
+}
+.btns .btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.about-me {
+  color: #fdfffc;
+  background-color: #003049;
+}
+
+.about-me-content {
+  margin-top: 50px;
+}
+
+#aboutgif2 {
+  font-size: 12px;
+}
+
+.ii {
+  font-size: 30px;
+  transition: 1s all;
+}
+.ii:hover {
+  color: #ffffe8;
+  cursor: pointer;
+}
+
+#Ex-button {
+  background-color: #fdf0d5;
+  color: #011627;
+  border-radius: 40px;
+  width: 40%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  transition: 1s all;
+}
+#Ex-button:hover {
+  background-color: #fdf0d5;
+  transform: scale(1.2);
+}
+
+.ex-button {
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#nav-home {
+  margin-top: 10px;
+}
+
+#nav-home-tab:hover,
+#nav-profile-tab:hover,
+#nav-contact-tab:hover {
+  transform: scale(1);
+}
+
+#panel {
+  width: 100%;
+  height: auto;
+  background-color: rgb(0, 0, 0);
+}
+
+.btn-group {
+  margin-top: 50px;
+}
+
+.about-me-buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#btn4 {
+  color: #011627;
+  border-radius: 50px;
+  transition: 1s all;
+  background-color: #f1faee;
+}
+#btn4:hover {
+  color: #ffffe8;
+  transform: scale(1.2);
+}
+
+.workTitle,
+.clientsTitle {
+  color: white;
+}
+
+.card {
+  height: 250px;
+}
+
+#nav-contact {
+  margin-top: 20px;
+}
+
+.progress {
+  margin: 15px;
+  height: 30px;
+}
+
+#clients-title,
+#projects-title {
+  color: #ffffe8;
+}
+
+.iji {
+  background-color: #003049;
+}
+
+.clientsTitle {
+  font-size: 4vw;
+  position: relative;
+  text-transform: uppercase;
+  color: #003049;
+  -webkit-text-stroke-color: 0.3vw #f1faee;
+}
+
+.clientsTitle::before {
+  content: attr(data-text);
+  position: absolute;
+  top: auto;
+  left: auto;
+  width: 0;
+  height: 100%;
+  color: #01fe87;
+  -webkit-text-stroke-color: 0vw #f1faee;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    width: 0%;
+  }
+  10% {
+    width: 0%;
+  }
+  70% {
+    width: 18%;
+  }
+  90% {
+    width: 18%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    width: 0%;
+  }
+  10% {
+    width: 0%;
+  }
+  70% {
+    width: 18%;
+  }
+  90% {
+    width: 18%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.clients {
+  text-align: center;
+  background-color: #003049;
+  color: #011627;
+}
+
+.qoute {
+  font-size: x-large;
+  color: #ffffe8;
+}
+
+#project-img {
+  width: 10px;
+  height: 500px;
+}
+
+#project-title-inside {
+  color: #1d3557;
+  background-color: #1d3557;
+  font-weight: bolder;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.commentbtn {
+  background-color: #003049;
+  color: #ffffe8;
+}
+.commentbtn:hover {
+  background-color: #fdf0d5;
+}
+
+.projects {
+  background-color: #003049;
+  color: #011627;
+}
+
+#latest-work-img {
+  height: 300px;
+  transition: 1s all;
+}
+#latest-work-img:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.card-title,
+.card-text,
+.card-footer {
+  text-align: center;
+}
+
+.card-2 {
+  box-shadow: 5px 1px 20px 5px #011627;
+}
+
+.lets-work-together {
+  background-color: #003049;
+}
+
+.lets-work-together img {
+  margin-top: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+.lets-work-together p {
+  color: #ffffe8;
+  font-size: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.lets-work-together-title {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+label {
+  color: #ffffe8;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+#footerTitle {
+  font-size: 40px;
+}
+
+.placeholder {
+  width: 20%;
+  height: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .header ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header ul li a {
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .who-i-am .image {
+    margin-bottom: 40px;
+  }
+  .who-i-am .row {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .who-i-am .row .text {
+    width: 100%;
+  }
+  .who-i-am .row #p3,
+.who-i-am .row #p2 {
+    width: 100%;
+    font-size: 40px;
+  }
+  .who-i-am .row .btns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .who-i-am .row .btns .btn {
+    background-color: #003049;
+    color: white;
+    padding: 10px;
+  }
+  .who-i-am .row .btns .btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+  }
+  .clients .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .clients .row .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .clients .row .cards .card {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .projects .project-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .project-container .pro {
+    margin-bottom: 20px;
+  }
+  .lets-work-together .hna {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .lets-work-together .hna p {
+    font-size: 25px;
+  }
+  .lets-work-together .hna img {
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  @-webkit-keyframes animate {
+    0% {
+      width: 0%;
+    }
+    10% {
+      width: 0%;
+    }
+    70% {
+      width: 24%;
+    }
+    90% {
+      width: 24%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+  @keyframes animate {
+    0% {
+      width: 0%;
+    }
+    10% {
+      width: 0%;
+    }
+    70% {
+      width: 24%;
+    }
+    90% {
+      width: 24%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+}/*# sourceMappingURL=index.css.map */
